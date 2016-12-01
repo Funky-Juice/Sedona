@@ -1,28 +1,32 @@
-.intro {
+.review-intro {
+
+}
+
+.review-intro {
   &::before {
     content: '';
     display: block;
-    height: 389px;
+    height: 159px;
     background:
             url('../img/bg-intro-triangle-mobile.svg') no-repeat bottom,
-            url('../img/text-sedona-index.svg') no-repeat center,
-            @color-light-blue url('../img/bg-back-mobile@1x.jpg') no-repeat top;
+            url('../img/text-sedona.svg') no-repeat center,
+            @color-light-blue url('../img/bg-back-mobile@1x.jpg') no-repeat center;
     background-size: cover, 90%, auto;
   }
 }
 
-.intro__content {
+.review-intro__content {
   padding: 20px;
   text-align: center;
 }
 
-.intro__title {
+.review-intro__title {
   .font-title();
   line-height: 1.44;
   color: @color-black;
 }
 
-.intro__text {
+.review-intro__text {
   .font-main();
   line-height: 1.85;
   color: @color-black;
