@@ -1,7 +1,17 @@
 .intro {
+
   &::before {
     content: '';
     display: block;
+    height: 159px;
+    background:
+            url('../img/bg-intro-triangle-mobile.svg') no-repeat bottom,
+            url('../img/text-sedona.svg') no-repeat center,
+            @color-light-blue url('../img/bg-back-mobile@1x.jpg') no-repeat center;
+    background-size: cover, 90%, auto;
+  }
+
+  &--index-page::before {
     height: 389px;
     background:
             url('../img/bg-intro-triangle-mobile.svg') no-repeat bottom,
