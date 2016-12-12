@@ -1,5 +1,5 @@
 .main-menu {
-  //position: relative;
+  position: relative;
   background-color: @color-white;
 
   &--closed .main-menu__toggle::before {
@@ -71,6 +71,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media @tablet-width {
+    display: flex;
+  }
 }
 
 .main-menu__item {
@@ -101,21 +105,15 @@
 
 
   @media @tablet-width {
+
     a {
       color: @color-black;
     }
 
-    &:nth-child(1),
     &:nth-child(2) {
-      float: left;
+      margin-right: auto;
     }
 
-    &:nth-child(3),
-    &:nth-child(4) {
-      float: right;
-    }
-
-    //width: 153.6px;
     width: 20%;
     border: none;
     background-color: @color-white;
