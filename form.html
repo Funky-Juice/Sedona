@@ -9,42 +9,21 @@
   <body>
   <div class="page-wrap">
     <header class="page-header">
-      <nav class="main-menu  main-menu--mobile">
-        <a class="main-menu__toggle">
-          <img class="main-menu__burger-button" src="img/icon-menu.svg" width="23" height="21" alt="Открыть">
-          <span class="main-menu__close-button" title="Закрыть"></span>
-        </a>
+      <nav class="main-menu  main-menu--opened  main-menu--nojs">
+        <button class="main-menu__toggle" type="button"></button>
 
-        <div class="main-menu__wrap">
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a href="index.html">Главная</a></li>
-            <li class="main-menu__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="main-menu__item"><a>Форма отзыва</a></li>
-            <li class="main-menu__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a href="index.html">Главная</a></li>
+          <li class="main-menu__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-menu__item"><a>Форма отзыва</a></li>
+          <li class="main-menu__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
       </nav>
 
       <div class="page-header__wrap">
         <a class="page-header__logo" href="index.html">
           <img src="img/logo-sedona-mobile.svg" alt="Седона">
         </a>
-
-        <nav class="main-menu  main-menu--tablet">
-          <a class="main-menu__toggle">
-            <img class="main-menu__burger-button" src="img/icon-menu.svg" width="23" height="21" alt="Открыть">
-            <span class="main-menu__close-button" title="Закрыть"></span>
-          </a>
-
-          <div class="main-menu__wrap">
-            <ul class="main-menu__list">
-              <li class="main-menu__item"><a href="index.html">Главная</a></li>
-              <li class="main-menu__item"><a href="photo.html">Фото и видео</a></li>
-              <li class="main-menu__item"><a>Форма отзыва</a></li>
-              <li class="main-menu__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
       </div>
     </header>
 
@@ -60,60 +39,30 @@
       </section>
 
       <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="review-form__fieldset-wrap">
-          <fieldset class="evaluation-fieldset  evaluation-fieldset--tablet">
-            <h2 class="evaluation-fieldset__title">Ваше общее впечатление:</h2>
+        <fieldset class="name-fieldset">
+          <h2 class="name-fieldset__title">Представьтесь:</h2>
 
-            <div class="evaluation-fieldset__wrap">
-              <label class="radio-field">
-                <input class="radio-field__input" type="radio" id="radio-4" name="user_evaluation_tablet" checked>
-                <label for="radio-4"></label>
-                <span class="radio-field__input-text">Скорее положительное</span>
-              </label>
+          <label class="name-fieldset__item  text-field">
+            <span class="name-fieldset__field-name">Имя*:</span>
+            <div class="name-fieldset__wrap-input">
+              <input class="text-field__input" type="text" name="user_name" placeholder="Петр" required>
             </div>
+          </label>
 
-            <div class="evaluation-fieldset__wrap">
-              <label class="radio-field">
-                <input class="radio-field__input" type="radio" id="radio-5" name="user_evaluation_tablet">
-                <label for="radio-5"></label>
-                <span class="radio-field__input-text">Скорее отрицательное</span>
-              </label>
+          <label class="name-fieldset__item  text-field">
+            <span class="name-fieldset__field-name">Фамилия*:</span>
+            <div class="name-fieldset__wrap-input">
+              <input class="text-field__input" type="text" name="user_surname" placeholder="Иванов" required>
             </div>
+          </label>
 
-            <div class="evaluation-fieldset__wrap">
-              <label class="radio-field">
-                <input class="radio-field__input" type="radio" id="radio-6" name="user_evaluation_tablet">
-                <label for="radio-6"></label>
-                <span class="radio-field__input-text">Затрудняюсь ответить</span>
-              </label>
+          <label class="name-fieldset__item  text-field">
+            <span class="name-fieldset__field-name">Отчество:</span>
+            <div class="name-fieldset__wrap-input">
+              <input class="text-field__input" type="text" name="user_patronym" placeholder="Александрович" required>
             </div>
-          </fieldset>
-
-          <fieldset class="name-fieldset">
-            <h2 class="name-fieldset__title">Представьтесь:</h2>
-
-            <label class="name-fieldset__item  text-field">
-              <span class="name-fieldset__field-name">Имя*:</span>
-              <div class="name-fieldset__wrap-input">
-                <input class="text-field__input" type="text" name="user_name" placeholder="Петр" required>
-              </div>
-            </label>
-
-            <label class="name-fieldset__item  text-field">
-              <span class="name-fieldset__field-name">Фамилия*:</span>
-              <div class="name-fieldset__wrap-input">
-                <input class="text-field__input" type="text" name="user_surname" placeholder="Иванов" required>
-              </div>
-            </label>
-
-            <label class="name-fieldset__item  text-field">
-              <span class="name-fieldset__field-name">Отчество:</span>
-              <div class="name-fieldset__wrap-input">
-                <input class="text-field__input" type="text" name="user_patronym" placeholder="Александрович" required>
-              </div>
-            </label>
-          </fieldset>
-        </div>
+          </label>
+        </fieldset>
 
         <fieldset class="contacts-fieldset">
           <h2 class="contacts-fieldset__title  contacts-fieldset__title--mobile">Контактная информация:</h2>
@@ -135,7 +84,7 @@
           </label>
         </fieldset>
 
-        <fieldset class="evaluation-fieldset  evaluation-fieldset--mobile">
+        <fieldset class="evaluation-fieldset">
           <h2 class="evaluation-fieldset__title">Ваше общее впечатление:</h2>
 
           <div class="evaluation-fieldset__wrap">
@@ -168,33 +117,29 @@
           <legend class="places-fieldset__title  places-fieldset__title--tablet">Посещенные<br>достопримечательности:</legend>
 
           <div class="places-fieldset__wrap">
-            <div class="places-fieldset__continer">
-              <label class="checkbox-field  places-fieldset__item">
-                <input class="checkbox-field__input" type="checkbox" id="checkbox-1" name="user_places" checked>
-                <label for="checkbox-1"></label>
-                <span class="checkbox-field__input-text">Мост Дьявола</span>
-              </label>
+            <label class="checkbox-field  places-fieldset__item">
+              <input class="checkbox-field__input" type="checkbox" id="checkbox-1" name="user_places" checked>
+              <label for="checkbox-1"></label>
+              <span class="checkbox-field__input-text">Мост Дьявола</span>
+            </label>
 
-              <label class="checkbox-field  places-fieldset__item">
-                <input class="checkbox-field__input" type="checkbox" id="checkbox-2" name="user_places" checked>
-                <label for="checkbox-2"></label>
-                <span class="checkbox-field__input-text">Слайд-парк</span>
-              </label>
-            </div>
+            <label class="checkbox-field  places-fieldset__item">
+              <input class="checkbox-field__input" type="checkbox" id="checkbox-2" name="user_places" checked>
+              <label for="checkbox-2"></label>
+              <span class="checkbox-field__input-text">Слайд-парк</span>
+            </label>
 
-            <div class="places-fieldset__continer">
-              <label class="checkbox-field  places-fieldset__item">
-                <input class="checkbox-field__input" type="checkbox" id="checkbox-3" name="user_places" checked>
-                <label for="checkbox-3"></label>
-                <span class="checkbox-field__input-text">Гора-Колокол</span>
-              </label>
+            <label class="checkbox-field  places-fieldset__item">
+              <input class="checkbox-field__input" type="checkbox" id="checkbox-3" name="user_places" checked>
+              <label for="checkbox-3"></label>
+              <span class="checkbox-field__input-text">Гора-Колокол</span>
+            </label>
 
-              <label class="checkbox-field  places-fieldset__item">
-                <input class="checkbox-field__input" type="checkbox" id="checkbox-4" name="user_places">
-                <label for="checkbox-4"></label>
-                <span class="checkbox-field__input-text">Красные скалы</span>
-              </label>
-            </div>
+            <label class="checkbox-field  places-fieldset__item">
+              <input class="checkbox-field__input" type="checkbox" id="checkbox-4" name="user_places">
+              <label for="checkbox-4"></label>
+              <span class="checkbox-field__input-text">Красные скалы</span>
+            </label>
           </div>
         </fieldset>
 
@@ -255,5 +200,7 @@
       </div>
     </footer>
   </div>
+
+  <script type="text/javascript" src="js/main-menu.js"></script>
   </body>
 </html>

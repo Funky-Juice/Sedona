@@ -9,42 +9,21 @@
   <body>
   <div class="page-wrap">
     <header class="page-header">
-      <nav class="main-menu  main-menu--mobile">
-        <a class="main-menu__toggle">
-          <img class="main-menu__burger-button" src="img/icon-menu.svg" width="23" height="21" alt="Открыть">
-          <span class="main-menu__close-button" title="Закрыть"></span>
-        </a>
+      <nav class="main-menu  main-menu--opened  main-menu--nojs">
+        <button class="main-menu__toggle" type="button"></button>
 
-        <div class="main-menu__wrap">
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a>Главная</a></li>
-            <li class="main-menu__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="main-menu__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-menu__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a>Главная</a></li>
+          <li class="main-menu__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-menu__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-menu__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
       </nav>
 
       <div class="page-header__wrap">
         <a class="page-header__logo">
           <img src="img/logo-sedona-mobile.svg" alt="Седона">
         </a>
-
-        <nav class="main-menu  main-menu--tablet">
-          <a class="main-menu__toggle">
-            <img class="main-menu__burger-button" src="img/icon-menu.svg" width="23" height="21" alt="Открыть">
-            <span class="main-menu__close-button" title="Закрыть"></span>
-          </a>
-
-          <div class="main-menu__wrap">
-            <ul class="main-menu__list">
-              <li class="main-menu__item"><a>Главная</a></li>
-              <li class="main-menu__item"><a href="photo.html">Фото и видео</a></li>
-              <li class="main-menu__item"><a href="form.html">Форма отзыва</a></li>
-              <li class="main-menu__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-            </ul>
-          </div>
-        </nav>
       </div>
     </header>
 
@@ -97,7 +76,7 @@
 
         <div class="advantages__item-container  advantages__item-container--blue">
           <div class="advantages__item  advantages__item--second">
-            <h2 class="advantages__title">Там есть мост дьявола</h2>
+            <h2 class="advantages__title">Там есть<br> мост дьявола</h2>
             <span>- №2 -</span>
             <p>Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
           </div>
@@ -107,21 +86,21 @@
 
         <div class="advantages__item-container  advantages__item-container--grey">
           <div class="advantages__item  advantages__item--grey">
-            <h2 class="advantages__title">Небольшая площадь</h2>
+            <h2 class="advantages__title">Небольшая<br> площадь</h2>
             <span>-№3-</span>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p>Все достопримеча<br>тельности находятся очень близко</p>
           </div>
 
           <div class="advantages__item  advantages__item--grey">
-            <h2 class="advantages__title">Красивая дорога</h2>
+            <h2 class="advantages__title">Красивая<br> дорога</h2>
             <span>-№4-</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p>Ехать в Седону из Лас-&nbsp;Вегаса совсем не&nbsp;скучно!</p>
           </div>
 
           <div class="advantages__item  advantages__item--grey">
-            <h2 class="advantages__title">Мало туристов</h2>
+            <h2 class="advantages__title">Мало<br> туристов</h2>
             <span>-№5-</span>
-            <p>Большиснвто едет в Гранд Каньон и толпятся там</p>
+            <p>Большинство едет в Гранд Каньон и толпятся там</p>
           </div>
         </div>
       </section>
@@ -129,7 +108,7 @@
       <section class="search-form">
         <div class="search-form__wrap">
           <h2 class="search-form__title">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a href="1" class="button  button--search-form">Найти гостиницу</a>
         </div>
       </section>
@@ -160,5 +139,7 @@
       </div>
     </footer>
   </div>
+
+  <script type="text/javascript" src="js/main-menu.js"></script>
   </body>
 </html>
