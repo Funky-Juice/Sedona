@@ -39,7 +39,6 @@
         pattern = new RegExp(pattern);
 
         if(pattern.test(input.value) !== true) {
-            //evt.preventDefault();
             isEmpty = true;
             markInput(input);
             showCover();

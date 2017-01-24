@@ -1,25 +1,24 @@
-.checkbox-field {
+.checkbox-field {}
 
-  label {
-    &:hover {
-      background-color: #e5e5e5;
-    }
-
-    &:active {
-      background-color: #d5d5d5;
-    }
-
-    display: inline-block;
-    position: relative;
-    width: 56px;
-    height: 56px;
-    margin-right: 24px;
-    border: none;
-    border-radius: 5px;
-    vertical-align: middle;
-    background-color: @color-lighter-grey;
-    cursor: pointer;
+.checkbox-field__checkbox {
+  &:hover {
+    background-color: #e5e5e5;
   }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+
+  display: inline-block;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+  border: none;
+  border-radius: 5px;
+  vertical-align: middle;
+  background-color: @color-lighter-grey;
+  cursor: pointer;
 }
 
 .checkbox-field__input {
@@ -37,10 +36,10 @@
   cursor: pointer;
 }
 
-#checkbox-1:checked ~ label[for="checkbox-1"],
-#checkbox-2:checked ~ label[for="checkbox-2"],
-#checkbox-3:checked ~ label[for="checkbox-3"],
-#checkbox-4:checked ~ label[for="checkbox-4"] {
+#checkbox-1:checked ~ .checkbox-field__checkbox,
+#checkbox-2:checked ~ .checkbox-field__checkbox,
+#checkbox-3:checked ~ .checkbox-field__checkbox,
+#checkbox-4:checked ~ .checkbox-field__checkbox {
 
   &:active::before,
   &:active::after{
