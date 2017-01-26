@@ -1,10 +1,35 @@
 (function(){
   var form = document.querySelector('.review-form'),
+      inputField = form.querySelectorAll('.text-field__input'),
       sendForm = form.querySelector('.button--send-form'),
       popupError = form.querySelector('.popup--error'),
       popupSuccess = form.querySelector('.popup--success'),
       closePopup = form.querySelectorAll('.button--popup-close');
 
+
+  for (var l = 0; l < inputField.length; l++) {
+
+    inputField[l].addEventListener('focus', function() {
+      this.classList.remove('error');
+      var parent = this.parentNode;
+      var message = parent.querySelector('.error-text');
+      if(message) parent.removeChild(message);
+
+      var helpText = this.getAttribute('title');
+      if(!helpText) return;
+
+      var helpBlock = document.createElement('div');
+
+      helpBlock.textContent = helpText;
+      helpBlock.className = 'help-message';
+      this.parentNode.appendChild(helpBlock);
+    });
+
+    inputField[l].addEventListener('blur', function() {
+      var helpBlock = form.querySelector('.help-message');
+      if(helpBlock) this.parentNode.removeChild(helpBlock);
+    });
+  }
 
   function showCover() {
     var coverDiv = document.createElement('div');
