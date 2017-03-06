@@ -103,7 +103,7 @@
   }
 
   window.addEventListener('keydown', function(evt) {
-    if (evt.keyCode === 27) {
+    if (evt.keyCode === 27 || evt.keyCode === 13) {
       if (popupError.classList.contains('popup--show') || popupSuccess.classList.contains('popup--show')) {
         evt.preventDefault();
         hideCover();

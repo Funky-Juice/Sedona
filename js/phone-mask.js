@@ -1,3 +1,12 @@
+(function () {
+  var phoneInput = document.getElementById('zipCode');
+
+  phoneInput.addEventListener('keyup', function() {
+    mask('zipCode', '+7(000)000-00-00', event);
+  })
+})();
+
+
 function mask(inputName, mask, evt) {
   try {
     var inputField = document.getElementById(inputName);
