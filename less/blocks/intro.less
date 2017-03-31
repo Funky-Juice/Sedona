@@ -3,10 +3,10 @@
   &::before {
     content: '';
     display: block;
-    height: 180px;
+    height: 158px;
     background:
             url('../img/bg-intro-triangle-mobile.svg') no-repeat bottom,
-            url('../img/text-sedona.svg') no-repeat center,
+            url('../img/text-sedona.svg') no-repeat center 43%,
             @color-light-blue url('../img/bg-back-mobile@1x.jpg') no-repeat bottom;
     background-size: 103%, 230px, auto;
 
@@ -41,7 +41,7 @@
       height: 292px;
       background:
               url('../img/bg-intro-triangle-tablet.svg') no-repeat bottom,
-              url('../img/text-sedona.svg') no-repeat center,
+              url('../img/text-sedona.svg') no-repeat center 45%,
               @color-light-blue url('../img/bg-back-tablet@1x.jpg') no-repeat bottom;
       background-size: 102%, 460px, cover;
 
@@ -86,11 +86,11 @@
   }
 
   @media @desktop-width {
-
     &::before {
+      height: 300px;
       background:
               url('../img/bg-intro-triangle-desktop.svg') no-repeat bottom,
-              url('../img/text-sedona.svg') no-repeat center,
+              url('../img/text-sedona.svg') no-repeat center 45%,
               @color-light-blue url('../img/bg-back-desktop@1x.jpg') no-repeat bottom;
       background-size: 102%, 460px, cover;
 
@@ -125,15 +125,31 @@
 .intro__content {
   width: 270px;
   margin: 0 auto;
-  padding: 45px 20px 30px;
   text-align: center;
 
   @media @mobile-width-only {
-    padding: 40px 20px 25px;
+    &--index-page {
+      padding: 40px 20px 25px;
+    }
+
+    padding: 38px 20px 25px;
   }
 
   @media @tablet-width {
+    &--index-page {
+      padding: 48px 20px 30px;
+    }
+
     width: 455px;
+    padding: 64px 20px 30px;
+  }
+
+  @media @desktop-width {
+    &--index-page {
+      padding: 48px 20px 32px;
+    }
+
+    padding: 104px 20px 32px;
   }
 }
 
@@ -145,11 +161,21 @@
   color: @color-black;
 
   @media @mobile-width-only {
-    margin: 0 auto 31px;
+    &--index-page {
+      margin: 0 auto 31px;
+    }
+
+    margin: 0 auto 26px;
   }
 
   @media @tablet-width {
+    &--index-page {
+      margin: 0 auto 30px;
+      line-height: 1.2;
+    }
+
     max-width: none;
+    margin: 0 auto 21px;
     font-size: @font-size-extra-large;
   }
 }
@@ -163,6 +189,6 @@
 
   @media @tablet-width {
     max-width: 440px;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
   }
 }
