@@ -58,16 +58,16 @@
       height: 520px;
       background:
               url('../img/bg-intro-triangle-tablet.svg') no-repeat bottom,
-              url('../img/text-sedona-index.svg') no-repeat center,
+              url('../img/text-sedona-index.svg') no-repeat center 45%,
               @color-light-blue url('../img/bg-back-desktop@1x.jpg') no-repeat top;
-      background-size: 102%, 500px, cover;
+      background-size: 102%, 450px, cover;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background:
                 url('../img/bg-intro-triangle-tablet.svg') no-repeat bottom,
-                url('../img/text-sedona-index.svg') no-repeat center,
+                url('../img/text-sedona-index.svg') no-repeat center 45%,
                 @color-light-blue url('../img/bg-back-desktop@2x.jpg') no-repeat top;
-        background-size: 102%, 500px, cover;
+        background-size: 102%, 450px, cover;
       }
     }
 
@@ -81,7 +81,7 @@
 
     &--index-page .intro__text {
       max-width: none;
-      margin-bottom: 20px;
+      margin-bottom: 19px;
     }
   }
 
@@ -107,16 +107,16 @@
       height: 520px;
       background:
               url('../img/bg-intro-triangle-desktop.svg') no-repeat bottom,
-              url('../img/text-sedona-index.svg') no-repeat center,
+              url('../img/text-sedona-index.svg') no-repeat center 46%,
               @color-light-blue url('../img/bg-back-desktop@1x.jpg') no-repeat top;
-      background-size: 102%, 500px, cover;
+      background-size: 102%, 450px, cover;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background:
                 url('../img/bg-intro-triangle-desktop.svg') no-repeat bottom,
-                url('../img/text-sedona-index.svg') no-repeat center,
+                url('../img/text-sedona-index.svg') no-repeat center 46%,
                 @color-light-blue url('../img/bg-back-desktop@2x.jpg') no-repeat top;
-        background-size: 102%, 500px, cover;
+        background-size: 102%, 450px, cover;
       }
     }
   }
@@ -125,8 +125,12 @@
 .intro__content {
   width: 270px;
   margin: 0 auto;
-  padding: 40px 20px 30px 20px;
+  padding: 45px 20px 30px;
   text-align: center;
+
+  @media @mobile-width-only {
+    padding: 40px 20px 25px;
+  }
 
   @media @tablet-width {
     width: 455px;
@@ -135,10 +139,14 @@
 
 .intro__title {
   max-width: 265px;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 25px;
   .font-title();
   line-height: 1.44;
   color: @color-black;
+
+  @media @mobile-width-only {
+    margin: 0 auto 31px;
+  }
 
   @media @tablet-width {
     max-width: none;

@@ -50,21 +50,21 @@
 
   span {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     .font-main();
     line-height: 1.5;
   }
 
+  &--first {
+    padding: 28px 20px 40px;
+  }
+
   &--grey {
-    padding: 30px 35px;
+    padding: 28px 35px;
     border-bottom: 1px solid #d6d6d6;
 
     &:last-child {
       border: none;
-    }
-
-    @media @tablet-width {
-      width: 33.3%;
     }
   }
 
@@ -84,6 +84,10 @@
       max-width: 170px;
     }
 
+    span {
+      margin-bottom: 20px;
+    }
+
     &--first {
       width: 33%;
       float: left;
@@ -95,9 +99,13 @@
     }
 
     &--grey {
-      border: none;
       flex-grow: 1;
+      width: 33.3%;
+      padding: 43px 35px 46px;
+      border: none;
     }
+
+    padding: 42px 20px 40px;
 
   }
 
@@ -118,18 +126,28 @@
         max-width: 230px;
       }
     }
+
+    &--grey {
+      padding: 43px 40px 40px;
+
+      p {
+        margin-bottom: 26px;
+      }
+    }
+
+    padding: 50px 20px 40px;
   }
 }
 
 .advantages__title {
-  margin: 0 auto;
-  margin-bottom: 15px;
+  margin: 0 auto 8px;
   .font-title();
   line-height: 1.44;
 
   @media @tablet-width {
     max-width: 300px;
     font-size: @font-size-large;
+    line-height: 1.37;
   }
 }
 
@@ -161,7 +179,7 @@
   @media @tablet-width {
 
     &--first {
-      width: 67%;
+      width: 66.6%;
       float: right;
       background: @color-light-blue url(../img/photo-city@1x.jpg) no-repeat center;
       background-size: cover;
@@ -173,7 +191,7 @@
     }
 
     &--second {
-      width: 67%;
+      width: 66.7%;
       float: left;
       background: @color-light-blue url(../img/photo-bridge@1x.jpg) no-repeat center;
       background-size: cover;
@@ -183,6 +201,8 @@
         background-size: cover;
       }
     }
+
+    height: 256px;
   }
 
   @media @desktop-width {
