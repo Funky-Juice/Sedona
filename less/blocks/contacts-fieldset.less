@@ -68,7 +68,6 @@
   }
 
   @media @desktop-width {
-
     &:nth-child(odd) {
       float: right;
     }
@@ -80,7 +79,6 @@
 }
 
 .contacts-fieldset__field-name {
-
   &--desktop {
     display: none;
   }
@@ -99,7 +97,6 @@
   }
 
   @media @desktop-width {
-
     &--mobile {
       display: none;
     }
@@ -115,10 +112,6 @@
 }
 
 .contacts-fieldset__input-wrap {
-  display: block;
-  position: relative;
-  cursor: pointer;
-
   input {
     width: 100%;
   }
@@ -140,6 +133,10 @@
   &--email-icon::before {
     background: @color-dark-grey url('../img/icon-mail.svg') no-repeat center;
   }
+
+  display: block;
+  position: relative;
+  cursor: pointer;
 
   @media @desktop-width {
     display: inline-block;
