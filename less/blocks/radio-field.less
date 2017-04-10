@@ -42,15 +42,12 @@
   max-width: 185px;
   vertical-align: middle;
   .font-title();
-  line-height: 1.44;
+  line-height: @lh-26;
   color: @color-black;
   text-transform: none;
 }
 
-#radio-1:checked ~ .radio-field__checkbox,
-#radio-2:checked ~ .radio-field__checkbox,
-#radio-3:checked ~ .radio-field__checkbox {
-
+.radio-field__input:checked ~ .radio-field__checkbox{
   &:active::before {
     background-color: #a4a4a4;
   }

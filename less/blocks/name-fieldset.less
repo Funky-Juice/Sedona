@@ -3,14 +3,15 @@
   text-align: center;
 
   @media @mobile-width-only {
-    padding-top: 18px;
+    padding-top: 17px;
+    padding-bottom: 6px;
   }
 
   @media @tablet-width {
     order: 1;
     box-sizing: border-box;
     width: 50%;
-    margin-bottom: 83px;
+    margin-bottom: 82px;
     padding-top: 0;
     padding-left: 55px;
     border: none;
@@ -26,29 +27,26 @@
 .name-fieldset__title {
   max-width: 250px;
   .font-title();
-  line-height: 1.44;
+  line-height: @lh-26;
   color: @color-black;
 
   @media @mobile-width-only {
-    margin: 0 auto 22px;
+    margin: 0 auto 21px;
   }
 
   @media @tablet-width {
     margin: 0 auto 62px 1px;
     text-align: left;
-    font-size: @font-size-large;
-    line-height: 0.8;
+    font-size: @fs-21;
+    line-height: 17px;
   }
 }
 
 .name-fieldset__item {
   display: flex;
   width: 280px;
+  margin: 0 auto 20px;
   cursor: pointer;
-
-  @media @mobile-width-only {
-    margin: 0 auto 22px;
-  }
 
   @media @tablet-width {
     &:last-child {
@@ -56,14 +54,13 @@
     }
 
     width: 100%;
-    margin: 0 auto 20px;
   }
 }
 
 .name-fieldset__field-name {
   max-width: 100px;
   margin-right: 13px;
-  line-height: 57px;
+  line-height: @lh-58;
   overflow: hidden;
 
   @media @mobile-width-only {
@@ -72,15 +69,18 @@
 
   @media @tablet-width {
     margin-right: 15px;
-    line-height: 58px;
   }
 }
 
 .name-fieldset__input-wrap {
-  flex-grow: 1;
-  width: 70%;
-
   input {
     width:100%;
+  }
+
+  flex-grow: 1;
+  width: 69%;
+
+  @media @tablet-width {
+    width: 67%;
   }
 }

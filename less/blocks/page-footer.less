@@ -7,16 +7,27 @@
 .page-footer__wrap {
   box-sizing: border-box;
   width: 100%;
-  padding: 30px 8% 16px;
   text-align: center;
 
+  @media @mobile-width-only {
+    padding: 30px 8% 16px;
+  }
+
   @media @tablet-width {
+    &--ie11-patch {
+      padding: 35px 7% 37px;
+    }
+
     display: flex;
     justify-content: space-between;
-    padding: 36px 8%;
+    padding: 35px 8% 37px;
   }
 
   @media @desktop-width {
+    &--form-page {
+      padding: 36px 10%;
+    }
+
     padding: 36px 11%;
   }
 }
@@ -25,14 +36,21 @@
   box-sizing: border-box;
   display: block;
   margin-bottom: 29px;
-  line-height: 38px;
   .font-title-big();
-  color: @color-black;
+  line-height: 38px;
   text-decoration: none;
+  color: @color-black;
 
   @media @tablet-width {
     max-width: 220px;
     margin: 0;
     line-height: 45px;
+  }
+
+  @media @desktop-width {
+    &--form-page {
+      margin-left: 12px;
+      margin-right: -12px;
+    }
   }
 }

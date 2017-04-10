@@ -1,5 +1,5 @@
 .contacts-fieldset {
-  padding-top: 21px;
+  padding-top: 18px;
   border-top: 1px solid @color-dark-grey;
   text-align: center;
 
@@ -7,23 +7,22 @@
     position: relative;
     order: 2;
     width: 100%;
-    margin: 0 auto 53px;
-    padding-top: 39px;
+    margin: 0 auto 55px;
+    padding-top: 36px;
     border: none;
     border-top: 1px solid @color-dark-grey;
   }
 
   @media @desktop-width {
     .clearfix();
-    margin: 0 auto 51px;
-    padding-top: 88px;
+    padding-top: 86px;
   }
 }
 
 .contacts-fieldset__title {
   max-width: 270px;
   .font-title();
-  line-height: 1.44;
+  line-height: @lh-26;
   color: @color-black;
 
   @media @mobile-width-only {
@@ -40,7 +39,7 @@
     width: 370px;
     margin: 0 auto 22px;
     background-color: @color-white;
-    font-size: @font-size-large;
+    font-size: @fs-21;
   }
 
   @media @desktop-width {
@@ -50,24 +49,51 @@
 }
 
 .contacts-fieldset__item {
+  //&:first-of-type::after {
+  //  content: 'Ошибка, перепроверьте номер';
+  //  font-size: @fs-14;
+  //  line-height: @lh-26;
+  //  text-transform: none;
+  //  color: #ff5c5c;
+  //}
+
   display: block;
   width: 280px;
   text-align: left;
 
   @media @mobile-width-only {
+    //&:first-of-type::after {
+    //  position: absolute;
+    //  bottom: -30px;
+    //  left: 22px;
+    //}
+
     &:last-child {
       margin: 0 auto 29px;
     }
 
-    margin: 0 auto 44px;
+    position: relative;
+    margin: 0 auto 42px;
   }
 
   @media @tablet-width {
+    //&:first-of-type::after {
+    //  position: absolute;
+    //  top: 36px;
+    //  right: 0;
+    //}
+
     width: auto;
-    margin: 0 auto 27px;
+    margin: 0 auto 23px;
   }
 
   @media @desktop-width {
+    //&:first-of-type::after {
+    //  position: absolute;
+    //  top: 54px;
+    //  left: 106px;
+    //}
+
     &:nth-child(odd) {
       float: right;
     }
@@ -86,15 +112,9 @@
   display: block;
   max-width: 200px;
   margin-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   vertical-align: middle;
   overflow: hidden;
-
-  @media @mobile-width-only {
-    &--mobile {
-      margin-bottom: 10px;
-    }
-  }
 
   @media @desktop-width {
     &--mobile {
@@ -122,8 +142,8 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 57px;
-    height: 57px;
+    width: 58px;
+    height: 58px;
   }
 
   &--phone-icon::before {

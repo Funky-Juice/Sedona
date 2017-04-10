@@ -2,6 +2,14 @@
   background-color: @color-white;
 
   @media @tablet-width {
+    &--ie11-patch {
+      width: 86.3%;
+    }
+
+    &--edge-patch {
+      width: 85.7%;
+    }
+
     display: flex;
     flex-wrap: wrap;
     width: 84.37%;
@@ -66,7 +74,7 @@
   text-align: left;
 
   @media @mobile-width-only {
-    padding-top: 18px;
+    padding-top: 16px;
   }
 
   @media @tablet-width {
@@ -74,7 +82,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 17px 20px;
+    padding: 16px 20px;
     background-color: @color-lighter-grey;
   }
 
@@ -97,7 +105,7 @@
 .photo-blog__title {
   .font-main();
   font-weight: bold;
-  line-height: 1.71;
+  line-height: @lh-24;
   color: @color-black;
 
   @media @desktop-width {
@@ -108,7 +116,7 @@
 .photo-blog__author {
   .font-main();
   text-transform: none;
-  line-height: 1.71;
+  line-height: @lh-24;
   color: @color-black;
 
   @media @desktop-width {
@@ -143,6 +151,7 @@
   vertical-align: middle;
   .font-main();
   font-weight: bold;
+  line-height: @lh-24;
   color: @color-black;
 
   @media @desktop-width {
