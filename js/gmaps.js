@@ -8,7 +8,7 @@ function initMap() {
   });
 
   var image = {
-    url: '../img/icon-map-marker.svg',
+    url: 'img/icon-map-marker.svg',
     size: new google.maps.Size(27, 27)
   };
 
