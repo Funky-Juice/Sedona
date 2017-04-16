@@ -4,18 +4,15 @@
   text-align: center;
 
   @media @tablet-width {
-    position: relative;
     order: 2;
     width: 100%;
     margin: 0 auto 55px;
-    padding-top: 36px;
     border: none;
     border-top: 1px solid @color-dark-grey;
   }
 
   @media @desktop-width {
     .clearfix();
-    padding-top: 86px;
   }
 }
 
@@ -30,10 +27,8 @@
   }
 
   @media @tablet-width {
-    position: absolute;
-    top: -15px;
-    left: 0;
-    right: 0;
+    position: relative;
+    top: -32px;
     min-width: 400px;
     max-width: 400px;
     width: 370px;
@@ -49,25 +44,11 @@
 }
 
 .contacts-fieldset__item {
-  //&:first-of-type::after {
-  //  content: 'Ошибка, перепроверьте номер';
-  //  font-size: @fs-14;
-  //  line-height: @lh-26;
-  //  text-transform: none;
-  //  color: #ff5c5c;
-  //}
-
   display: block;
   width: 280px;
   text-align: left;
 
   @media @mobile-width-only {
-    //&:first-of-type::after {
-    //  position: absolute;
-    //  bottom: -30px;
-    //  left: 22px;
-    //}
-
     &:last-child {
       margin: 0 auto 29px;
     }
@@ -77,23 +58,11 @@
   }
 
   @media @tablet-width {
-    //&:first-of-type::after {
-    //  position: absolute;
-    //  top: 36px;
-    //  right: 0;
-    //}
-
     width: auto;
     margin: 0 auto 23px;
   }
 
   @media @desktop-width {
-    //&:first-of-type::after {
-    //  position: absolute;
-    //  top: 54px;
-    //  left: 106px;
-    //}
-
     &:nth-child(odd) {
       float: right;
     }
@@ -115,6 +84,11 @@
   margin-bottom: 7px;
   vertical-align: middle;
   overflow: hidden;
+
+  @media @tablet-width {
+    max-width: 400px;
+    white-space: pre-wrap;
+  }
 
   @media @desktop-width {
     &--mobile {

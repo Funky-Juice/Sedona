@@ -1,3 +1,21 @@
+(function() {
+  var phoneInput = document.getElementById('zipCode');
+  var media = '(min-width: 1200px)';
+
+  window.onload = placeHolderChange;
+  window.onresize = placeHolderChange;
+
+  function placeHolderChange() {
+    if(window.matchMedia(media).matches) {
+      phoneInput.setAttribute('placeholder', 'Введите номер');
+    }
+    else {
+      phoneInput.setAttribute('placeholder', 'Введите телефон');
+    }
+  };
+})();
+
+
 (function () {
   var phoneInput = document.getElementById('zipCode');
 

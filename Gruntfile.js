@@ -87,6 +87,20 @@ module.exports = function(grunt) {
           ],
           dest: "build"
         }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
+      },
+      js: {
+        files: [{
+          expand: true,
+          src: ["js/*.js"],
+          dest: "build"
+        }]
       }
     },
 
